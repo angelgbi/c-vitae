@@ -30,3 +30,4 @@ after_success:
 #  - cd dist/
 #  - pwd
 #  - lftp -d -c "set ftp:ssl-allow off; open -d --user $FTP_USER --password $FTP_PASSWORD ftp://$FTP_HOST:21; mirror -R . $FTP_PATH"
+#  - wput dist/ -up ftp://$FTP_USER:$FTP_PASSWORD@$FTP_HOST$FTP_PATH
